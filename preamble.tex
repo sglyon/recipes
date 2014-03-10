@@ -1,0 +1,94 @@
+%!TEX root = ../SkousenLyonCookbook.tex
+
+% Preamble
+    \documentclass[a4paper, twoside,10pt]{article}
+
+    % encoding, font, latin1guage
+    \usepackage[T1]{fontenc}
+    \usepackage[latin1]{inputenc}
+    \usepackage{lmodern}
+    \usepackage[ngerman, english]{babel}
+
+    \usepackage{nicefrac}
+
+    \usepackage[nowarnings]{xcookybooky}
+
+    \usepackage{blindtext}  % only needed for generating test text
+
+    \definecolor{mygreen}{rgb}{0,.5,0}
+    \DeclareRobustCommand{\textcelcius}{\ensuremath{^{\circ}\mathrm{C}}}
+
+    \setRecipeColors
+    {%
+      recipename = mygreen,
+      ing = cyan,
+      inghead = cyan,
+      prep,
+      prephead,
+      hint,
+      hinthead,
+    }
+
+    \setRecipeLengths{
+      preparationwidth = 0.50\textwidth,
+      ingredientswidth = 0.45\textwidth
+    }
+
+
+    %% This stuff is from me
+    \newcommand\degf{\textdegree F}
+    \usepackage{setspace}
+    \usepackage{xifthen}
+    \usepackage{tikz}
+    \usepackage{makeidx}
+    \makeindex
+
+    \newcommand{\nosection}[1]{%
+      \refstepcounter{section}%
+      \addcontentsline{toc}{section}{\protect\numberline{\arabic{section}}#1}%
+      \markright{#1}}
+    %% end stuff from me
+
+    \setcounter{secnumdepth}{1}
+    \renewcommand*{\recipesection}[2][]
+    {%
+      \subsection[#1]{#2}
+    }
+    \renewcommand{\subsectionmark}[1]
+    {% no implementation to display the section name instead
+    }
+
+
+    %%%%%%%%%%
+    % hyperref
+    \usepackage{hyperref}    % must be the last package
+    \hypersetup{%
+      pdfauthor            = {Shannen Lyon},
+      pdftitle             = {Our Favorite Recipes},
+      pdfsubject           = {Recipes},
+      pdfkeywords          = {recipes},
+      pdfstartview         = {FitV},
+      pdfview              = {FitH},
+      pdfpagemode          = {UseNone}, % Options; UseNone, UseOutlines
+      bookmarksopen        = {true},
+      pdfpagetransition    = {Glitter},
+      colorlinks           = {true},
+      linkcolor            = {magenta},
+      urlcolor             = {magenta}
+      citecolor            = {magenta},
+      filecolor            = {magenta},
+    }
+    % hyperref
+    %%%%%%%%%%
+
+\begin{document}
+
+\title{Our Favorite Recipes}
+\author{Shannen Lyon}
+\maketitle
+
+\setstretch{.5}
+\tableofcontents
+\setstretch{1.5}
+
+\newpage

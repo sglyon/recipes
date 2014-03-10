@@ -1,0 +1,46 @@
+% Copy/Paste this to get a new recipe ready to go
+
+\begin{recipe}
+        [ % You can use as many of these as you want. If you don't want to use them just leave it blank like we did going from calory to source.
+        % On the bakingtermperature line just change the number.
+        % the portion line is for hoy  many people it is supposed to feed
+        % the source line is where the recipe came from.
+            preparationtime = {1 h},
+            bakingtime={1 h},
+            bakingtemperature={300 \degf},
+            portion = {\portion{5-6}},
+            calory,
+            source = someone else
+        ]
+        % Put the name of the recipe in between the { } on the next line
+        {Test Recipe Number 2}
+
+            \graph
+            {% pictures I will help you figure out how to put them in here. Just ask me.
+                small,
+                big
+            }
+
+            \ingredients
+            {% List ingredients here. You will have to follow this format exactly: number & unit % item. For example, a cup of butter would be written "1 & cup & butter"
+            % Also keep in mind that you need to have the \\ at the end of all lines except the last one.
+                1 & cup & Butter\\
+                3 &        & Eggs\\
+                2 & tbs. & Vanilla\\
+                1 & Tbs. & Sugar
+            }
+
+
+            \preparation{
+            % This is where you list the steps. Just start each step with a new line (press enter on keyboard) and the phrase \step. That's it.
+                \step The same recipe as before, but showing the result if you do not insert pictures.
+                \step Test, Test, Test, Test, Test, Test, Test, Test, Test, Test, Test, Test
+                \step Another Test, Test, Test, Test. And once again Test, Test, Test, Test
+                \step \blindtext
+                \step You maybe want this time an empty hint.
+            }
+
+            % Here you can add an optional tip someone might want to keep in mind while making this. Not sure why we have to call it hint, but we do.
+          \hint{}
+\end{recipe}
+\newpage

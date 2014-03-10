@@ -1,0 +1,49 @@
+%!TEX root = ../SkousenLyonCookbook.tex
+
+\begin{recipe}
+    [ % You can use as many of these as you want. If you don't want to use them just leave it blank like we did going from calory to source.
+    % On the bakingtermperature line just change the number.
+    % the portion line is for hoy  many people it is supposed to feed
+    % the source line is where the recipe came from.
+        preparationtime,
+        bakingtime={2-4 h},
+        bakingtemperature,
+        portion,
+        calory,
+        source = Cindy Himes
+    ]
+    % Put the name of the recipe in between the { } on the next line
+    {Chicken and Noodles}
+    \index{chicken}
+    \index{basic}
+        \graph
+        {% pictures I will help you figure out how to put them in here. Just ask me.
+            small,
+            big
+        }
+
+        \ingredients
+        {% List ingredients here. You will have to follow this format exactly: number & unit % item. For example, a cup of butter would be written "1 cup & butter"
+        % Also keep in mind that you need to have the \ at the end of all lines except the last one.
+            4-6 & Chicken breasts\\
+            1 & Italian Seasoning packet\\
+            1 can & Cream of chicken soup\\
+            4 oz. & Cream cheese\\
+            1 pack & Egg noodles\\
+            & Salt \& pepper
+        }
+
+        \preparation{
+        % This is where you list the steps. Just start each step with a new line (press enter on keyboard) and the phrase \step. That's it.
+            \step Place the chicken in crock pot and sprinkle with Italian seasoning.
+            \step Pour the cream of chicken soup over the chicken.
+            \step Cook on low for 2-4 hours (more chicken requires more time).
+            \step 30 minutes before servings mix the cream cheese into the crock pot.
+            \step Shred the chicken.
+            \step When ready to serve cook the egg noodles as directed on the package.
+        }
+
+        % Here you can add an optional tip someone might want to keep in mind while making this. Not sure why we have to call it hint, but we do.
+      \hint{This meal is great with Cholula.}
+\end{recipe}
+\newpage

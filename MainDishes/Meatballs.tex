@@ -1,0 +1,47 @@
+%!TEX root = ../SkousenLyonCookbook.tex
+
+\begin{recipe}
+    [ % You can use as many of these as you want. If you don't want to use them just leave it blank like we did going from calory to source.
+    % On the bakingtermperature line just change the number.
+    % the portion line is for hoy  many people it is supposed to feed
+    % the source line is where the recipe came from.
+        preparationtime = {25 min},
+        bakingtime={30-40 min},
+        bakingtemperature={350\degf},
+        portion,
+        calory,
+        source = Shannen Lyon
+    ]
+    % Put the name of the recipe in between the { } on the next line
+    {Meatballs}
+    \index{sausage}
+
+        \graph
+        {% pictures I will help you figure out how to put them in here. Just ask me.
+            small,
+            big
+        }
+
+        \ingredients
+        {% List ingredients here. You will have to follow this format exactly: number & unit % item. For example, a cup of butter would be written "1 cup & butter"
+        % Also keep in mind that you need to have the \ at the end of all lines except the last one.
+            1 lb. & sausage\\
+            1/2 c.       & quick oats\\
+            2 Tbsp. & onions, grated\\
+            1/2 tsp. & salt\\
+            2/3 c. & milk
+        }
+
+
+        \preparation{
+        % This is where you list the steps. Just start each step with a new line (press enter on keyboard) and the phrase \step. That's it.
+            \step In a bowl, combine ingredients and roll into meatballs.
+            \step Brown in large saucepan.
+            \step Place in a casserole dish and pour spaghetti sauce over meatballs.
+            \step Bake at 350 degrees for 30-40 minutes.
+        }
+
+        % Here you can add an optional tip someone might want to keep in mind while making this. Not sure why we have to call it hint, but we do.
+      \hint{You can also use hamburger or ground turkey instead of sausage for meatballs.}
+\end{recipe}
+\newpage
